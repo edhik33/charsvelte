@@ -51,7 +51,7 @@
         
                   <div class="card h-80 shadow" style="border-radius:12px">
                    
-                           <img src="{post.image}" class="w-100 rounded lazy" style="object-fit: cover">
+                           <img src="{post.image}" class="w-100 rounded lazy" style="object-fit: cover" alt="opo">
                                <div class="mt-3 " style="height: 40px;background: #fff;">
                                   <span class=" text-dark p-2" style="font-size: 15px;">{ post.title }</span>
                                </div>

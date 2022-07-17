@@ -23,7 +23,7 @@
         
               <div class="card h-80 shadow" style="border-radius:12px">
                
-                       <img src="{charity.image}" class="w-100 rounded lazy" style="object-fit: cover">
+                       <img src="{charity.image}" class="w-100 rounded lazy" style="object-fit: cover" alt="opo">
                            <div class="mt-3 " style="height: 40px;background: #fff;">
                               <span class=" text-dark p-2" style="font-size: 15px;">{ charity.title }</span>
                            </div>
@@ -40,7 +40,7 @@
                                      
                                         <div class="row align-items-left jumbotron-santri-koding">
                                              <div class="col-12 col-md-6 text-left">
-                                                  <h5 class="font-weight-bolder text-dark p-2">{ charity.crowdfunding }    <img src="{charity.logo}" class="align-items-left" style="width:20px;"></h5> 
+                                                  <h5 class="font-weight-bolder text-dark p-2">{ charity.crowdfunding }    <img src="{charity.logo}" class="align-items-left" style="width:20px;" alt="opo"></h5> 
                                               </div>                   
                                           </div>
 

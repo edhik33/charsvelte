@@ -37,7 +37,7 @@
             
                   {#each posts as item }
                   <div class="col-md-3 col-3  text-center " >
-                      <img src="{item.image}" class="mt-3 rounded-circle bg-success"  style="width: 50px;text-align:center">
+                      <img src="{item.image}" class="mt-3 rounded-circle bg-success"  style="width: 50px;text-align:center" alt="opo">
                   <p class="mt-2">{ item.name }</p>
               </div>
               {/each}

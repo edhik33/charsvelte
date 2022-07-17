@@ -53,7 +53,7 @@
                                     </div>
                                 </div>
                             </div>
-                         <img src="{charity.data.image}" class="w-100 rounded lazy" style="object-fit: cover">
+                         <img src="{charity.data.image}" class="w-100 rounded lazy" style="object-fit: cover" alt="opo">
                           <hr>
                          
                            
@@ -74,7 +74,31 @@
 
                                 <h6> {@html charity.data.description}</h6> 
                                                                                        
-                               
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputAmount">Amount donation</label>
+                                        <input required type="number" class="form-control" id="exampleInputAmount"
+                                            aria-describedby="amountHelp" placeholder="Enter amount">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputName">Your name</label>
+                                        <input required type="text" class="form-control" id="exampleInputName"
+                                            aria-describedby="nameHelp" placeholder="Enter full name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input required type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">I Agree</label>
+                                    </div>
+                                </form>
+                                <div class="modal-footer">
+									<button type="button" class="btn btn-primary">Continue</button>
+								</div>
+
                             </div>
                         </div>
                     </div>

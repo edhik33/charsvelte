@@ -21,7 +21,8 @@
                   <div class="col-md-7">
                       <div class="card border-0 shadow-sm rounded">
                           <div class="card-body">
-                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15811.56372239357!2d110.38925847067618!3d-7.801370600857166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59b04635a099%3A0x999298dfd69c9f5f!2sMasbos%20Corporation!5e0!3m2!1sid!2sid!4v1656078749318!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="w-100"  referrerpolicy="no-referrer-when-downgrade"></iframe>
+                       <!-- svelte-ignore a11y-missing-attribute -->
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15811.56372239357!2d110.38925847067618!3d-7.801370600857166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59b04635a099%3A0x999298dfd69c9f5f!2sMasbos%20Corporation!5e0!3m2!1sid!2sid!4v1656078749318!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="w-100 "  referrerpolicy="no-referrer-when-downgrade"></iframe>
                           </div>
                           
                       </div>
