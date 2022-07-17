@@ -2,7 +2,7 @@ exports.handler = function (event, context, callback) {
       const Midtrans = require('midtrans-client');
       const header = {
             'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Headers': 'Cpntent-Type',
+            'Access-Control-Allow-Headers': 'Content-Type',
             'Access-Control-Allow-Methods': 'GET,POST,PUT,DELETE',
       };
 
@@ -14,13 +14,13 @@ exports.handler = function (event, context, callback) {
 
       const { id, name , amount } = JSON.parse(event.body);
       const names = name.split('');
-      let fisrt_name, last_name;
+      let first_name, last_name;
 
       if (names && names.length > 1) {
-            fisrt_name = [0],
-            last_name = [1];
-      } else if(names.length > 1) {
-            fisrt_name = [0],
+            first_name = names[0],
+            last_name = names[1];
+      } else if(names.length === 1) {
+            first_name = names[0],
                   last_name = '';
       }
 
@@ -30,7 +30,7 @@ exports.handler = function (event, context, callback) {
                   gross_amount: parseInt(amount)
             },
             customer_details: {
-                  fisrt_name,
+                  first_name,
                   last_name,
             },
             credit_card: {
@@ -48,7 +48,7 @@ exports.handler = function (event, context, callback) {
                         statusCode: 200,
                         headers,
                         body: JSON.stringify({
-                              URL: redirect_url,
+                              url: redirect_url,
                               params: parameters
                         })
                   })
